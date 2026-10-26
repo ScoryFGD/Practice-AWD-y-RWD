@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo AWD - Móvil</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="mobile-body">
+    <header class="main-header">
+        <h1>📱 Versión Móvil (AWD)</h1>
+        <p>DOM optimizado (sin gráficos pesados).</p>
+    </header>
+
+    <main class="product-grid">
+        <% products.forEach(product => { %>
+            <div class="card">
+                <h3><%= product.name %></h3>
+                <button class="btn-buy">Comprar</button>
+            </div>
+        <% }) %>
+    </main>
+</body>
+</html>

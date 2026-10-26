@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo AWD - Escritorio</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1>💻 Panel de Escritorio (AWD)</h1>
+        <p>Versión completa con gráficos y especificaciones avanzadas.</p>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Filtros Avanzados</h3>
+            <ul>
+                <li>Procesadores</li>
+                <li>Memorias RAM</li>
+                <li>Almacenamiento</li>
+            </ul>
+            <div class="chart-box">
+                <p>📊 Gráfico de Rendimiento (Cargado en Desktop)</p>
+            </div>
+        </aside>
+
+        <main class="product-grid">
+            <% products.forEach(product => { %>
+                <div class="card">
+                    <div class="img-placeholder">🖥️</div>
+                    <h3><%= product.name %></h3>
+                    <p><%= product.spec %></p>
+                    <button class="btn-buy">Comprar</button>
+                </div>
+            <% }) %>
+        </main>
+    </div>
+</body>
+</html>
